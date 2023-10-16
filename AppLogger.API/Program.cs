@@ -72,25 +72,6 @@ if (loggerTypeSection != null)
 
 
 
-
-/*
-loggerFactory.AddColoredConsoleLogger(c =>
-{
-    c.LogLevel = LogLevel.Debug;
-    c.Color = ConsoleColor.Gray;
-});*/
-
-
-/*
-builder.Services.AddLogging(loggingBuilder => {
-    var loggingSection = builder.Configuration.GetSection("Logging:File");
-    
-    loggingBuilder.AddFile(loggingSection);
-});*/
-
-
-//loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), "logs"));
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
